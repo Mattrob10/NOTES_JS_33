@@ -1,0 +1,265 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 12px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #5c5757;
+  background-image: linear-gradient(-300deg, #5385e3 33%, transparent 30%), linear-gradient(-60deg, #ef4040 33%, transparent 30%);
+  background-position: auto;
+  background: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+}
+
+.container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-container {
+  display: flex;
+  padding-top: 2rem;
+  width: 100%;
+}
+hr{
+  color: #eee;
+}
+
+.form-container {
+  width: 30%;
+}
+
+.notes-container{
+  width: 70%;
+}
+form > * {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+  padding: 7px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  width: 100%;
+}
+
+form textarea {
+ height: 10rem;
+}
+
+.form-container h2{
+  color: #eee;
+}
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  color: #eee;
+}
+
+.note {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+}
+.notes-header .note-btn{
+  background-color: #5c5757;
+  color: #ee4747;
+  font-size: 1.6rem;
+  padding: 1rem;
+  outline: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.notes-header .note-btn:hover {
+  background-color: #ee4747;
+  color: #5c5757;
+  text-transform: uppercase;
+}
+
+.note-cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-counter {
+  font-size: 1.4rem;
+  background-color: #5c5757;
+  padding: 1px 5px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  /* border: solid 1px #ee4747; */
+  border-radius: 3px;
+}
+
+.note-btn {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: #ef4040;
+  color: #eee;
+  cursor: pointer;
+}
+
+.edit-btn {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: #be20ee;
+  color: #eee;
+  cursor: pointer;
+}
+
+.note-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(49, 131, 208);
+}
+
+.note-text {
+  font-size: 1.4rem;
+}
+
+
+
+/* Animated text styling  */
+.days{
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px;
+  /* background-color:#eee; */
+}
+
+.days p, .days span {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #e0d6e1, #c0c9d3, #ee4747, #96b0dc);
+  background-size: 700px;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: gradient-move 4.9s linear infinite;
+  animation: gradient-move 2s infinite alternate-reverse;
+}
+
+.days p:hover {
+  -webkit-animation: gradient-move 2s infinite alternate-reverse;
+}
+
+@-webkit-keyframes gradient-move {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 700px 0; } 
+}
+/* End of Animated Text Styling */
+
+/* start of Footer styling */
+
+footer{
+  position:fixed;
+  width: 100%;
+  background: #5c5757;
+  padding: 8px 20px;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  font-size: 1.4rem;
+  right: 0;
+  height: 16rem;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.social-media {
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 3rem;
+}
+
+.social-media a{
+  margin: 5px 10px; 
+}
+.social-media a:nth-child(1){
+    color:#1DA1F2
+  }
+.social-media a:nth-child(2){
+    color:#ffffff
+    ;
+  }
+.social-media a:nth-child(3){
+    color:#e81bb2
+}
+.social-media a:nth-child(1):hover{
+  color: #fff;
+}
+.social-media a:nth-child(2):hover{
+    color: rgb(248, 64, 64);
+}
+.social-media a:nth-child(3):hover{
+    color: rgb(27, 166, 55);
+}
+
+footer span a{
+  color: orangered;
+  text-decoration: none;
+}
+
+footer span a:hover{
+  color: #db6400;
+  text-decoration: none;
+}
+footer span a:hover{
+  color: #1DA1F2;
+  text-decoration: underline;
+}
+
+footer span .not{
+  color: orangered;
+  text-decoration: line-through;
+}
+
+/* media */
+
+@media screen and (max-width: 600px){
+  .flex {
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+}  

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Notes</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <h1 class="text-light">MayoCodes NOTES</h1>
+      </div>
+    </nav>
+  </header>
+  
+  <section>
+    <div class="container section-container">
+      <!-- form container -->
+      <div class="form-container">
+        <h2>Add Note</h2>
+        <hr>
+        <form>
+          <input type="text" id="note-title"
+          placeholder="Note Title">
+          <textarea id="note-text" cols="30" rows="10" placeholder="Note Details"></textarea>
+          <button id="add-btn" class="btn btn-danger btn-lg">Add Note</button>
+        </form>
+      </div>
+      <!-- notes container -->
+        <div class="notes-container">
+          <div class="container">
+            <div class="notes-header">
+              <h2>Your Notes</h2>
+              <button class="clear note-btn">Delete ALL Notes</button>
+              </div>
+              <hr>
+
+              <div id="notes">
+                <!-- <div class="note">
+                  <div class="note-cta">
+                    <p class="note-counter">Note 1</p>
+                    <div class="note-ctn-btn">
+                      <button class="note-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                      <button class="edit-btn">
+                       <i class="fas fa-edit"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <hr>
+                  <h3 class="note-title">Title: Hello!</h3>
+                  <p class="note-text">This is the content</p>
+                </div> -->
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="days">
+      <span class="project">Project # 33</span>
+      <p>#100 DaysOfJavaScript By Matthew Robinson</p>
+    </div>
+  </section>
+
+  <div class="footer">
+  <footer>
+    <img src="images/avatar1.png" height="85px" width="85px">
+    <div class="social-media">
+      <a href="https://twitter.com/MayoCodes" target="_blank">
+        <i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/Mattrob10"target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://codepen.io/mattrob10"target="_blank">
+          <i class="fab fa-codepen"></i>
+        </a>
+    </div>
+  
+    <span>Created By <a href="mailto:mmrobinson1983@gmail." target="_blank">MayoCodes</a> | <span class="far fa-copyright"></span> 2022 All rights <span class="not">Reserved</span></span></span>
+  </footer>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
